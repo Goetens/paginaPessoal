@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html ::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#container {
+    overflow: auto;
+    height: 100vh;
+}
+
+p, ul, li{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover{
+    color: blue;
+
+}
+
+/* TELA DE BEM VINDO */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo h1 {
+    height: 200px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    font-size: 80px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo h1::before,
+.titulo h1:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(50deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: borda 10s linear alternate infinite;
+}
+
+.titulo h1::after {
+    filter: blur(100px);
+}
+
+@keyframes borda {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+.intro {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+/* TOLEDO */
+
+.cidade {
+    display: grid;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+
+}
+
+.resumo {
+    align-content: center;
+    color: white;
+    margin-right: 2rem;
+}
+
+/* TRABALHO */
+
+.trabalho {
+    display: grid;
+    height: 50vh;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+}
+
+.dkv img {
+    max-height: 400px;
+}
+
+.dkvtxt {
+    color: white;
+    align-content: center;
+    padding: 5rem;
+}
+
+.dkvtxt, .btn{
+    float: inline-end;
+}
+
+
+/* FACULDADE */
+
+.faculdade {
+    display: grid;
+    height: 50vh;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+}
+
+.utf img {
+    max-height: 400px;
+}
+
+.utftxt {
+    color: white;
+    align-content: center;
+    padding: 5rem;
+}
+
+.utftxt, .btn{
+    float: inline-end;
+}
+
+.btn {
+    background-color: #a0530e;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+
+.gostos{
+    display: grid;
+    color: white;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* MUSICAS */
+
+.musicas {
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 10rem;
+    height: 80vh;
+}
+
+.musicas h3 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.musicas li {
+    padding: 0 1rem 3rem 0;
+    list-style: none;
+}
+
+.sertanejo,
+.rock,
+.rap {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+}
+
+.sertanejo{
+    background-image: url(serta.gif);
+    background-size: cover;
+    background-position: center center;
+}
+
+.rock{
+    background-image: url(rock.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+.rap{
+    background-image: url(giphy.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+/*PROGRAMAS*/
+
+.programas {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+    height: 70vh;
+}
+
+.programas h3 {
+    text-align: center;
+    padding: 2rem;
+}
+
+.programas li {
+    padding: 0 1rem 3rem 0;
+    list-style: none;
+}
+
+.filmes,
+.series {
+    border-radius: 10px;
+    border: 1px solid;
+    height: 500px;
+    width: 350px;
+    background-image: url(filme.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+h3{
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* MAICON */
+
+.maicon{
+    display: grid;
+    color: white;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+
+/* GALERIA */
+
+.galeria img{
+    filter: grayscale(100%);
+}
+
+.galeria img:hover{
+    filter: grayscale(0%);
+}
+
+.galeria p{
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.largas img{
+    max-height: 280px;
+}
+
+.largas{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(300px));
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+}
+
+.largas div p{
+    display: grid;
+    max-width: 420px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: solid;
+}
+
+.menores{
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    height: 50vh;
+}
+
+.menores div p{
+    display: grid;
+    max-width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: solid;
+}

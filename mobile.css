@@ -1,0 +1,370 @@
+@media (max-width: 992px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #container{
+        display: grid;
+        grid-template-areas:
+         "titulo"
+         "intro"
+        "cidade"
+         "dkv"
+         "dkvtxt"
+         "utf"
+         "utftxt"
+         "gostos"
+         "sertanejo"
+         "rock"
+         "rap"
+         "filmes"
+         "series"
+         "maicon"
+         "galeria"
+    }
+
+    .titulo{
+        max-width: 992px;
+        height: 100vh;
+    }
+
+    .titulo h1{
+        height: 100px;
+        width: 300px;
+        font-size: 40px;
+    }
+
+    .intro{
+        max-width: 992px;
+        height: 40vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cidade{
+        max-width: 992px;
+        display: grid;
+        grid-template-columns:auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 105vh;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .resumo{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .carrocel img{
+        max-width: 992px;
+    }
+
+    .trabalho{
+        display: grid;
+        grid-template-columns:auto;
+        height: 130vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .trabalho, .btn{
+        float: none;
+    }
+
+    .trabalho img{
+        height: 250px;
+    }
+
+    .dkvtxt{
+        padding: 15px;
+    }
+
+    .faculdade{
+        display: grid;
+        grid-template-columns:auto;
+        height: 90vh;
+        text-align: center;
+        padding: 0;
+    }
+
+    .faculdade, .btn{
+        float: none;
+    }
+
+    .faculdade img{
+        height: 250px;
+    }
+
+    .utftxt{
+        padding: 15px;
+    }
+
+    .gostos{
+        height: 55vh;
+        text-align: center;
+        padding: 5px;
+
+    }
+
+    .musicas{
+        display: grid;
+        grid-template-columns:auto;
+        height: 260vh;
+        justify-content: center;
+        margin-bottom: 60px;
+        gap: 10px;
+    }
+
+    .musicas a {
+        text-decoration: underline;
+    }
+
+    .sertanejo,
+    .rock,
+    .rap {
+        height: 600px;
+        width: 300px;
+    }
+
+    .programas{
+        display: grid;
+        grid-template-columns:auto;
+        height: 170vh;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .programas a {
+        text-decoration: underline;
+    }
+
+    .filmes,
+    .series {
+        height: 500px;
+        width: 300px;
+    }
+
+    .maicon{
+        height: 75vh;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .galeria img{
+        filter:grayscale(0%)
+    }
+
+    .largas img{
+        height: 250px;
+    }
+
+    .largas div p{
+        max-width: 375px;
+    }
+
+    .largas{
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: auto;
+        height: 410vh;
+    }
+
+    .menores{
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: auto;
+        height: 270vh;
+    }
+}
+
+@media (max-height: 812px){
+
+    .intro{
+        height: 100vh;
+    }
+
+    .cidade{
+        height: 130vh;
+    }
+    
+    .trabalho{
+        height:150vh ;
+    }
+
+    .gostos{
+        height: 100vh;
+    }
+
+    .musicas{
+        height: 330vh;
+    }
+
+    .maicon{
+        height: 130vh;
+    }
+    
+    .largas{
+        height: 480vh;
+    }
+
+    .menores{
+        height: 380vh;
+    }
+}
+
+@media (max-height: 780px){
+
+    .largas{
+        height: 500vh;
+    }
+
+    .menores{
+        height: 400vh;
+    }
+}
+
+@media (max-height: 600px){
+
+    .intro{
+        height: 100vh;
+    }
+
+    .cidade{
+        height: 170vh;
+    }
+    
+    .trabalho{
+        height:290vh ;
+    }
+
+    .gostos{
+        height: 200vh;
+    }
+
+    .musicas{
+        height: 420vh;
+    }
+
+    .programas{
+        height: 240vh;
+    }
+
+    .maicon{
+        height: 220vh;
+    }
+
+    .largas{
+        height: 700vh;
+    }
+
+    .menores{
+        height: 560vh;
+    }
+}
+
+@media (max-width: 360px){
+
+    .titulo{
+        max-width: 360px;
+    }
+    
+    .cidade{
+        max-width: 360px;
+    }
+
+    .trabalho{
+        max-width: 360px;
+    }
+
+    .faculdade{
+        max-width: 360px;
+    }
+
+    .gostos{
+        max-width: 360px;
+    }
+
+    .musicas{
+        max-width: 360px;
+    }
+
+    .programas{
+        max-width: 360px;
+    }
+
+    .maicon{
+        max-width: 360px;
+    }
+
+    .largas img{
+        height: 200px;
+    }
+
+    .largas div p{
+       max-width: 300px;
+    }
+}
+
+@media (max-width: 320px){
+
+    .titulo{
+        max-width: 320px;
+    }
+    
+    .cidade{
+        max-width: 320px;
+    }
+
+    .trabalho{
+        max-width: 320px;
+    }
+
+    .trabalho img{
+        padding: 10px;
+    }
+
+    .faculdade{
+        max-width: 320px;
+    }
+
+    .faculdade img{
+        padding: 10px;
+    }
+
+    .gostos{
+        max-width: 320px;
+    }
+
+    .musicas{
+        max-width: 320px;
+    }
+
+    .programas{
+        max-width: 320px;
+    }
+
+    .maicon{
+        max-width: 320px;
+    }
+
+    .largas img{
+        height: 200px;
+    }
+
+    .largas div p{
+       max-width: 300px;
+    }
+
+}
